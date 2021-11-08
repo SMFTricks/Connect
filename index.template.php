@@ -206,7 +206,7 @@ function template_body_above()
 	    <div id="nav">
 	        <ul>
 		        <li id="login">
-			        <a id="login-trigger" href="#">' . $txt['login'] . '<span>&#x25BC;</span></a>
+			        <a id="login-trigger" href="javascript:void(0)">' . $txt['login'] . '<span>&#x25BC;</span></a>
 			        <div id="login-content">
 				        <form id="guest_form" action="', $scripturl, '?action=login2" method="post" accept-charset="', $context['character_set'], '" ', empty($context['disable_login_hashing']) ? ' onsubmit="hashLoginPassword(this, \'' . $context['session_id'] . '\');"' : '', '>
 					        <fieldset id="inputs">
